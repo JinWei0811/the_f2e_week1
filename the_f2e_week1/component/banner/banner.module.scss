@@ -1,0 +1,44 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    gap: 24px;
+
+    span {
+        color: var(--netural2-color)
+    }
+}
+
+.advocate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 357px 310px 0;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        max-width:636px;;
+        gap: 36px;
+
+        .line {
+            width: 306px;
+            height: 2px;
+            background-color: black;
+        }
+    }
+}
