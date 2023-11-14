@@ -9,6 +9,7 @@
 body {
   margin: 0;
   background-image: url('/home-page.jpg');
+  background-position: center;
   background-color: lightgray;
   background-position: -300px -1357.23px;
   background-repeat: no-repeat;

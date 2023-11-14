@@ -1,0 +1,58 @@
+.card {
+  width: 525px;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  .serial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    background-color: var(--primary-color);
+    span {
+      color: var(--neutral1-color);
+    }
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.img {
+  position: relative;
+  width: 525px;
+  height: 344.55px;
+  .feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 24px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 10px 0px 0px 0px;
+    background-color: var(--primary-color);
+
+    Image {
+      padding: 1px;
+    }
+  }
+}
+
+.content {
+  span {
+    margin: 20px 8px;
+    display: flex;
+  }
+}
