@@ -12,7 +12,6 @@ export default function Card(props: any) {
         </div>
         <div className={styles.content}>
           <span
-            className={`h5`}
             dangerouslySetInnerHTML={{ __html: props.title }}
           ></span>
         </div>
@@ -29,7 +28,7 @@ export default function Card(props: any) {
           <Image src={"/share.png"} alt="share" width={20} height={20}></Image>
         </div>
       </div>
-      <div className={styles.content}>
+      <div className={styles.detail}>
         <span className="h6">{props.content}</span>
       </div>
     </div>

@@ -1,0 +1,110 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 80px;
+  width: 100%;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 776px;
+    span {
+      text-align: center;
+    }
+  }
+  .right_line {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: var(--primary-color);
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+  .left_line {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: var(--primary-color);
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 0;
+  align-self: stretch;
+  border-radius: 24px;
+  border: 5px dashed var(--primary-color);
+  background: var(--neutral1-color);
+
+  input {
+    display: flex;
+    // width: 414px;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--text, #454545);
+
+    text-align: center;
+    &:not(:placeholder-shown) {
+      text-align: left;
+    }
+  }
+
+  textarea {
+    display: flex;
+    width: 414px;
+    height: 155px;
+    padding: 8px 20px;
+    align-items: flex-start;
+    gap: 260px;
+    resize: none;
+  }
+
+  .send {
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    background: var(--netural2-color);
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+    span {
+      color: var(--neutral1-color);
+      text-align: center;
+    }
+  }
+}

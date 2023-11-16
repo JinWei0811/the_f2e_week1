@@ -24,6 +24,16 @@
     flex: 1;
     justify-content: flex-end;
     align-items: center;
+
+    span {
+      color: var(--text, #454545);
+      text-align: right;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 10px;
+    }
   }
 }
 
@@ -31,6 +41,10 @@
   position: relative;
   width: 525px;
   height: 344.55px;
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
   .feature {
     display: flex;
     flex-direction: row;
@@ -44,13 +58,14 @@
     border-radius: 10px 0px 0px 0px;
     background-color: var(--primary-color);
 
-    Image {
+    img {
       padding: 1px;
+      cursor: pointer;
     }
   }
 }
 
-.content {
+.detail {
   span {
     margin: 20px 8px;
     display: flex;

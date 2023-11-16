@@ -1,12 +1,36 @@
 .news {
   padding-top: 185px;
   padding-left: 177px;
+  position: relative;
 }
+
+.upper_arrow {
+  position: absolute;
+  left: 401px;
+  top: 52px;
+}
+
+.lastest {
+  position: absolute;
+  top: 139px;
+  left: 477px;
+}
+
+.more {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  top: 124px;
+  left: 1702px;
+  cursor: pointer;
+}
+
 .content {
   display: flex;
-  width: 1743px;
   padding: 120px 0px 120px 120px;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
   border-radius: 100px 0px 0px 100px;
   background-color: var(--neutral1-color, #fffbf8);
