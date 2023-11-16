@@ -1,19 +1,18 @@
 import Navbar from "@/component/navbar/navbar";
 import React from "react";
 import styles from "./home.module.scss";
-import Banner from "@/component/banner/banner";
-import News from "@/component/news/news";
-import Policy from "@/component/policy/policy";
-import Donate from "@/component/donate/donate";
-import Service from "@/component/service/service";
+import Banner from "@/component/home/banner/banner";
+import News from "@/component/home/news/news";
+import Policy from "@/component/home/policy/policy";
+import Donate from "@/component/home/donate/donate";
+import Service from "@/component/home/service/service";
+import Footer from "@/component/footer/footer";
 
 export default function Home() {
   return (
     <div className={styles.home}>
-      <div>
-        <Navbar></Navbar>
-      </div>
       <div className={styles.banner}>
+        <Navbar></Navbar>
         <Banner></Banner>
       </div>
       <div className={styles.news}>
@@ -27,6 +26,9 @@ export default function Home() {
       </div>
       <div className={styles.services}>
         <Service></Service>
+      </div>
+      <div className={styles.footer}>
+        <Footer></Footer>
       </div>
     </div>
   );

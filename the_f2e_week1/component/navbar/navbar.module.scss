@@ -1,24 +1,27 @@
 .navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 311px;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    margin-top: 17px;
+    cursor: pointer;
+  }
+
+  .navItem {
     display: flex;
     flex-direction: row;
-    padding: 0px 311px;
-    align-items: center;
-    justify-content: space-between;
+    margin-top: 32.5px;
+    gap: 24px;
 
-    .logo{
-        margin-top: 17px;
+    a {
+      text-decoration: none;
     }
 
-    .navItem {
-        display: flex;
-        flex-direction: row;
-        margin-top: 32.5px;
-        gap: 24px;
-
-        span {
-            &:hover {
-                cursor: pointer
-            }
-        }
+    span {
+      cursor: pointer;
     }
+  }
 }

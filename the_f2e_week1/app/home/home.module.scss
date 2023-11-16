@@ -1,12 +1,15 @@
-.home{
-    .banner{
-        margin-top: 106px;
-    }
-    .news{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .services{
-        margin: 80px 310px;
-    }
+.home {
+  .banner {
+    background-image: url("../../public/home-page.jpg");
+    background-position: center;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+  }
+  .news {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .services {
+    margin: 80px 310px;
+  }
 }

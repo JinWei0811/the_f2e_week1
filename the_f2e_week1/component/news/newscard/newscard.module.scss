@@ -1,0 +1,54 @@
+.newscard {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 120px 131px;
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    position: relative;
+  }
+  .infos {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    position: absolute;
+    width: 635px;
+    height: 114px;
+    right: 94px;
+    top: -114px;
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1 0 0;
+      align-self: stretch;
+
+      border-radius: 8px 8px 0px 0px;
+      background: var(--netural3-color);
+      .num {
+        color: var(--primary-color);
+        font-size: 48px;
+        font-weight: 900;
+        text-shadow: -1px -1px 0 var(--neutral1-color),
+          1px -1px 0 var(--neutral1-color), -1px 1px 0 var(--neutral1-color),
+          1px 1px 0 var(--neutral1-color);
+      }
+      .word {
+        color: var(--primary-color);
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}

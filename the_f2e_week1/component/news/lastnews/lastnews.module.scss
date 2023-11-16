@@ -1,0 +1,36 @@
+.lastnews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-width: 414px;
+
+  .search {
+    position: relative;
+    display: inline-block;
+  }
+  .date {
+    position: relative;
+    display: inline-block;
+  }
+  input {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--text, #454545);
+    width: 414px;
+
+    &:placeholder-shown {
+      font-size: 16px;
+      line-height: 28px; /* 175% */
+    }
+  }
+  .imgcontainer {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+}
