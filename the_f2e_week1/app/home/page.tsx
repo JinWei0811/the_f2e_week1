@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.banner}>
-        <Navbar></Navbar>
+        <Navbar parentStyles={styles}></Navbar>
         <Banner></Banner>
       </div>
       <div className={styles.news}>

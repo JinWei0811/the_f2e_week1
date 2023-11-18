@@ -1,0 +1,44 @@
+.options_container {
+  padding: 120px 0;
+  .total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 0px 0px;
+    background: var(--Neutral03, #e4d3cc);
+    position: absolute;
+    top: -136px;
+    right: 200px;
+    height: 136px;
+    width: 416px;
+
+    .money {
+      color: var(--Primary-01, #c87336);
+      text-align: right;
+      font-family: Noto Sans TC;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+    .num {
+      color: var(--Primary-01, #c87336);
+      text-align: right;
+      font-family: Noto Sans TC;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  .options_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px 24px ;
+  }
+}

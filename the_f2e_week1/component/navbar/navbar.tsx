@@ -3,7 +3,7 @@ import styles from "./navbar.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Navbar({ parentStyles }: any) {
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
@@ -13,10 +13,14 @@ export default function Navbar() {
       </div>
       <div className={styles.navItem}>
         <Link href={"/news"}>
-          <span className="h4">最新活動</span>
+          <span className={`h4 ${parentStyles.nav_news}`}>最新活動</span>
         </Link>
-        <span className="h4">政策議題</span>
-        <span className="h4">小額捐款</span>
+        <Link href={"/policy"}>
+          <span className={`h4 ${parentStyles.nav_policy}`}>政策議題</span>
+        </Link>
+        <Link href={"/donation"}>
+          <span className={`h4 ${parentStyles.nav_donation}`}>小額捐款</span>
+        </Link>
       </div>
     </div>
   );

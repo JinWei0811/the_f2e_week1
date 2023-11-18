@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./donate.module.scss";
 import Option from "./option/option";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Donate() {
   const options = [
@@ -46,10 +47,12 @@ export default function Donate() {
           ))}
         </div>
       </div>
-      <div className={styles.active}>
-        <span className="h6">前往捐款</span>
-        <Image src={"/white-right-arrow.svg"} alt="" width={8} height={16} />
-      </div>
+      <Link href={"/donation"}>
+        <div className={styles.active}>
+          <span className="h6">前往捐款</span>
+          <Image src={"/white-right-arrow.svg"} alt="" width={8} height={16} />
+        </div>
+      </Link>
     </div>
   );
 }

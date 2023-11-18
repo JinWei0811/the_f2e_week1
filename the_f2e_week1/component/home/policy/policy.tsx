@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./policy.module.scss";
 import Detail from "./detail/detail";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Policy() {
   const details = [
@@ -34,8 +35,10 @@ export default function Policy() {
         ))}
       </div>
       <div className={styles.more}>
-        <span className="h5">MORE</span>
-        <Image src={"/right-arrow.png"} alt="" width={8} height={16}/>
+        <Link href={"/policy"}>
+          <span className="h5">MORE</span>
+          <Image src={"/right-arrow.png"} alt="" width={8} height={16} />
+        </Link>
       </div>
     </div>
   );

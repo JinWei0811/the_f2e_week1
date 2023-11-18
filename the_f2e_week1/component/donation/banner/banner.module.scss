@@ -1,0 +1,29 @@
+.donation_banner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  .title {
+    span {
+      display: inline-flex;
+      text-align: center;
+    }
+  }
+  .go_donation {
+    display: flex;
+    padding: 8px 70px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+    background-color: var(--netural2-color);
+    border-radius: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    span {
+      color: var(--neutral1-color);
+    }
+  }
+}

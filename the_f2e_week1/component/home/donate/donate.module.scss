@@ -14,8 +14,8 @@
 }
 .container {
   display: flex;
-  justify-content: center; /* 水平居中 */
-  overflow: hidden; /* 隱藏超出容器的部分 */
+  justify-content: center;
+  overflow: hidden;
   .options {
     display: flex;
     width: 2196px;

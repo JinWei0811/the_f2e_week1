@@ -13,8 +13,12 @@ export default function Footer() {
         <Link href={"/news"}>
           <span className="h5">最新活動</span>
         </Link>
-        <span className="h5">政策議題</span>
-        <span className="h5">小額捐款</span>
+        <Link href={"/policy"}>
+          <span className="h5">政策議題</span>
+        </Link>
+        <Link href={"/donation"}>
+          <span className="h5">小額捐款</span>
+        </Link>
       </div>
       <div className={styles.info}>
         <div className={styles.profile}>

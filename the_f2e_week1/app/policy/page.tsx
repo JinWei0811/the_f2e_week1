@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <div className={styles.policy}>
       <div>
-        <Navbar></Navbar>
+        <Navbar parentStyles={styles}></Navbar>
       </div>
       <div className="content">
         <Policy></Policy>

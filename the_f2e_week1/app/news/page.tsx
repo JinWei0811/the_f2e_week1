@@ -9,7 +9,7 @@ export default function News() {
   return (
     <div>
       <div className={styles.header}>
-        <Navbar></Navbar>
+        <Navbar parentStyles={styles}></Navbar>
         <div className={styles.lastnews}>
           <Lastnews></Lastnews>
         </div>

@@ -1,8 +1,16 @@
+.nav_donation {
+  color: var(--netural2-color);
+}
+
 .banner {
   min-height: 900px;
   background: url("../../public/donation-bg.jpg") lightgray 50% / cover
     no-repeat;
   background-position: center;
   background-size: 100%;
+  position: relative;
+}
+
+.options {
   position: relative;
 }
